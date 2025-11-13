@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" 
+    rel="stylesheet" 
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" 
+    crossorigin="anonymous"
+    />
+    <script src="https://kit.fontawesome.com/085ab4000d.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <!-- Aquí inicia el NavBar-->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid container-fluid d-flex justify-content-between align-items-center">
+      <div class="d-flex align-items-center">
+        <i class="fa-brands fa-instagram fa-lg me-2"></i>
+        <h5 class="m-0 fw-semibold">Instagram</h5>
+  </div>
+  <!-- Botones -->
+<div class="d-flex align-items-center gap-2">
+  <!-- Boton create a post -->
+    <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">
+    Create a new post
+    </button>
+  <!-- Botón settings con dropdown -->
+    <div class="btn-group">
+          <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false">
+            <i class="fa-solid fa-gear"></i>
+          </button>
+          <ul class="dropdown-menu dropdown-menu-end">
+            <li><a class="dropdown-item" href="#">Profile</a></li>
+            <li><a class="dropdown-item" href="#">Accessibility</a></li>
+            <li><a class="dropdown-item" href="#">Privacy and Data</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item text-danger" href="#">Log Out</a></li>
+          </ul>
+    </div>
+</div>
+</div>
+</nav>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Create a new post</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+          <div class="mb-3">
+            <label for="exampleFormControlTextarea1" class="form-label fw-semibold">Caption:</label>
+            <textarea class="form-control mb-3" id="exampleFormControlTextarea1" rows="3" placeholder="Add the caption of your post here"></textarea>
+            <div class="d-flex align-items-center gap-2">
+            <button type="button" class="btn btn-light"><i class="fa-solid fa-camera"></i></button>
+            <button type="button" class="btn btn-light"><i class="fa-solid fa-location-dot"></i></button>
+            </div>
+          </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-success">Publish</button>
+      </div>
+    </div>
+  </div>
+</div>
+  <!-- Aquí termina el nav navbar -->
+  <!-- BotonesModo Grilla/Modo Individual -->
+<div class="container d-flex justify-content-center mt-4">
+<ul class="nav nav-tabs" id="myTab" role="tablist">
+  <li class="nav-item" role="presentation">
+    <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true"><i class="fa-solid fa-table-cells"></i></button>
+  </li>
+  <li class="nav-item" role="presentation">
+    <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false"><i class="fa-solid fa-square"></i></button>
+  </li>  
+</ul>
+</div>
+  <!-- Aquí termina los botones Modo Grilla/Modo Individual -->
+  <!-- Contenido de las pestañas -->
+<div class="tab-content" id="myTabContent">
+  <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">...
+<div class="container my-4">
+  <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+
+    <div class="col">
+      <div class="card border-0 ratio ratio-1x1">
+        <img src="https://picsum.photos/id/1011/600/600" class="card-img-top object-fit-cover rounded-0" alt="Boat">
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="card border-0 ratio ratio-1x1">
+        <img src="https://picsum.photos/id/1012/600/600" class="card-img-top object-fit-cover rounded-0" alt="Friends">
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="card border-0 ratio ratio-1x1">
+        <img src="https://picsum.photos/id/1013/600/600" class="card-img-top object-fit-cover rounded-0" alt="Wedding">
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="card border-0 ratio ratio-1x1">
+        <img src="https://picsum.photos/id/1014/600/600" class="card-img-top object-fit-cover rounded-0" alt="Blind">
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="card border-0 ratio ratio-1x1">
+        <img src="https://picsum.photos/id/1015/600/600" class="card-img-top object-fit-cover rounded-0" alt="Landscape">
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="card border-0 ratio ratio-1x1">
+        <img src="https://picsum.photos/id/1016/600/600" class="card-img-top object-fit-cover rounded-0" alt="Cannyon">
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="card border-0 ratio ratio-1x1">
+        <img src="https://picsum.photos/id/1018/600/600" class="card-img-top object-fit-cover rounded-0" alt="Fog">
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="card border-0 ratio ratio-1x1">
+        <img src="https://picsum.photos/id/1019/600/600" class="card-img-top object-fit-cover rounded-0" alt="Sea">
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="card border-0 ratio ratio-1x1">
+        <img src="https://picsum.photos/id/1020/600/600" class="card-img-top object-fit-cover rounded-0" alt="Bears">
+      </div>
+    </div>
+
+  </div>
+</div>
+  </div>
+
+  <!--Post Individuales-->
+
+  <div class="tab-pane fade d-flex justify-content-center mb-5" id="profile" role="tabpanel" aria-labelledby="profile-tab">...
+    <div class="container my-4">
+  <div class="row justify-content-center">
+    <div class="col-md-6">
+
+      <!--Post 1-->
+      <!-- Post -->
+<div class="card border rounded-1 mb-4" style="max-width: 600px;">
+  <!-- Título y fecha -->
+  <div class="card-body d-flex justify-content-between align-items-center py-2">
+    <h6 class="card-title mb-0 fw-semibold">En El Lago</h6>
+    <small class="text-muted">08/26</small>
+  </div>
+
+  <!-- Imagen -->
+  <img src="https://picsum.photos/id/1011/600/600" class="card-img-top rounded-0" alt="Boat">
+
+  <!-- Likes y caption -->
+  <div class="card-body py-2">
+    <p class="mb-1"><span class="fw-semibold">204 Likes</span></p>
+    <p class="card-text mb-0 small">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed hendrerit non risus non accumsan. Vivamus mollis est ut mauris faucibus maximus vitae vitae nunc. Vivamus sed lacus urna. Curabitur pretium condimentum euismod. Integer dignissim metus semper augue sagittis, vel placerat.</p>
+  </div>
+</div>
+
+      <!--Post 2-->
+      <!-- Post -->
+<div class="card border rounded-1 mb-4" style="max-width: 600px;">
+  <!-- Título y fecha -->
+  <div class="card-body d-flex justify-content-between align-items-center py-2">
+    <h6 class="card-title mb-0 fw-semibold">Hanging out!</h6>
+    <small class="text-muted">07/25</small>
+  </div>
+
+  <!-- Imagen -->
+  <img src="https://picsum.photos/id/1012/600/600" class="card-img-top rounded-0" alt="Friends">
+
+  <!-- Likes y caption -->
+  <div class="card-body py-2">
+    <p class="mb-1"><span class="fw-semibold">303 Likes</span></p>
+    <p class="card-text mb-0 small">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed hendrerit non risus non accumsan. Vivamus mollis est ut mauris faucibus maximus vitae vitae nunc. Vivamus sed lacus urna. Curabitur pretium condimentum euismod. Integer dignissim metus semper augue sagittis, vel placerat.</p>
+  </div>
+</div>
+
+      <!--Post 3-->
+      <!-- Post -->
+<div class="card border rounded-1 mb-4" style="max-width: 600px;">
+  <!-- Título y fecha -->
+  <div class="card-body d-flex justify-content-between align-items-center py-2">
+    <h6 class="card-title mb-0 fw-semibold">-Felicidades!</h6>
+    <small class="text-muted">06/25</small>
+  </div>
+
+  <!-- Imagen -->
+  <img src="https://picsum.photos/id/1013/600/600" class="card-img-top rounded-0" alt="Wedding">
+
+  <!-- Likes y caption -->
+  <div class="card-body py-2">
+    <p class="mb-1"><span class="fw-semibold">210 Likes</span></p>
+    <p class="card-text mb-0 small">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed hendrerit non risus non accumsan. Vivamus mollis est ut mauris faucibus maximus vitae vitae nunc. Vivamus sed lacus urna. Curabitur pretium condimentum euismod. Integer dignissim metus semper augue sagittis, vel placerat.</p>
+  </div>
+</div>
+
+      <!--Post 4-->
+      <!-- Post -->
+<div class="card border rounded-1 mb-4" style="max-width: 600px;">
+  <!-- Título y fecha -->
+  <div class="card-body d-flex justify-content-between align-items-center py-2">
+    <h6 class="card-title mb-0 fw-semibold">Foto Artística</h6>
+    <small class="text-muted">05/15</small>
+  </div>
+
+  <!-- Imagen -->
+  <img src="https://picsum.photos/id/1014/600/600" class="card-img-top rounded-0" alt="Blind">
+
+  <!-- Likes y caption -->
+  <div class="card-body py-2">
+    <p class="mb-1"><span class="fw-semibold">444 Likes</span></p>
+    <p class="card-text mb-0 small">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed hendrerit non risus non accumsan. Vivamus mollis est ut mauris faucibus maximus vitae vitae nunc. Vivamus sed lacus urna. Curabitur pretium condimentum euismod. Integer dignissim metus semper augue sagittis, vel placerat.</p>
+  </div>
+</div>
+
+      <!--Post 5-->
+      <!-- Post -->
+<div class="card border rounded-1 mb-4" style="max-width: 600px;">
+  <!-- Título y fecha -->
+  <div class="card-body d-flex justify-content-between align-items-center py-2">
+    <h6 class="card-title mb-0 fw-semibold">Paisaje Lindo</h6>
+    <small class="text-muted">04/03</small>
+  </div>
+
+  <!-- Imagen -->
+  <img src="https://picsum.photos/id/1015/600/600" class="card-img-top rounded-0" alt="Landscape">
+
+  <!-- Likes y caption -->
+  <div class="card-body py-2">
+    <p class="mb-1"><span class="fw-semibold">123 Likes</span></p>
+    <p class="card-text mb-0 small">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed hendrerit non risus non accumsan. Vivamus mollis est ut mauris faucibus maximus vitae vitae nunc. Vivamus sed lacus urna. Curabitur pretium condimentum euismod. Integer dignissim metus semper augue sagittis, vel placerat.</p>
+  </div>
+</div>
+
+      <!--Post 6-->
+      <!-- Post -->
+<div class="card border rounded-1 mb-4" style="max-width: 600px;">
+  <!-- Título y fecha -->
+  <div class="card-body d-flex justify-content-between align-items-center py-2">
+    <h6 class="card-title mb-0 fw-semibold">Como en Marte</h6>
+    <small class="text-muted">03/12</small>
+  </div>
+
+  <!-- Imagen -->
+  <img src="https://picsum.photos/id/1016/600/600" class="card-img-top rounded-0" alt="Cannyon">
+
+  <!-- Likes y caption -->
+  <div class="card-body py-2">
+    <p class="mb-1"><span class="fw-semibold">204 Likes</span></p>
+    <p class="card-text mb-0 small">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed hendrerit non risus non accumsan. Vivamus mollis est ut mauris faucibus maximus vitae vitae nunc. Vivamus sed lacus urna. Curabitur pretium condimentum euismod. Integer dignissim metus semper augue sagittis, vel placerat.</p>
+  </div>
+</div>
+
+      <!--Post 7-->
+      <!-- Post -->
+<div class="card border rounded-1 mb-4" style="max-width: 600px;">
+  <!-- Título y fecha -->
+  <div class="card-body d-flex justify-content-between align-items-center py-2">
+    <h6 class="card-title mb-0 fw-semibold">Hace Frío</h6>
+    <small class="text-muted">02/26</small>
+  </div>
+
+  <!-- Imagen -->
+  <img src="https://picsum.photos/id/1018/600/600" class="card-img-top rounded-0" alt="Fog">
+
+  <!-- Likes y caption -->
+  <div class="card-body py-2">
+    <p class="mb-1"><span class="fw-semibold">124 Likes</span></p>
+    <p class="card-text mb-0 small">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed hendrerit non risus non accumsan. Vivamus mollis est ut mauris faucibus maximus vitae vitae nunc. Vivamus sed lacus urna. Curabitur pretium condimentum euismod. Integer dignissim metus semper augue sagittis, vel placerat.</p>
+  </div>
+</div>
+
+      <!--Post 8-->
+      <!-- Post -->
+<div class="card border rounded-1 mb-4" style="max-width: 600px;">
+  <!-- Título y fecha -->
+  <div class="card-body d-flex justify-content-between align-items-center py-2">
+    <h6 class="card-title mb-0 fw-semibold">El Mar Es Muy Bonito</h6>
+    <small class="text-muted">01/22</small>
+  </div>
+
+  <!-- Imagen -->
+  <img src="https://picsum.photos/id/1019/600/600" class="card-img-top rounded-0" alt="Sea">
+
+  <!-- Likes y caption -->
+  <div class="card-body py-2">
+    <p class="mb-1"><span class="fw-semibold">324 Likes</span></p>
+    <p class="card-text mb-0 small">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed hendrerit non risus non accumsan. Vivamus mollis est ut mauris faucibus maximus vitae vitae nunc. Vivamus sed lacus urna. Curabitur pretium condimentum euismod. Integer dignissim metus semper augue sagittis, vel placerat.</p>
+  </div>
+</div>
+
+      <!--Post 9-->
+      <!-- Post -->
+<div class="card border rounded-1 mb-4" style="max-width: 600px;">
+  <!-- Título y fecha -->
+  <div class="card-body d-flex justify-content-between align-items-center py-2">
+    <h6 class="card-title mb-0 fw-semibold">Familia de Osos</h6>
+    <small class="text-muted">12/26</small>
+  </div>
+
+  <!-- Imagen -->
+  <img src="https://picsum.photos/id/1020/600/600" class="card-img-top rounded-0" alt="Bear">
+
+  <!-- Likes y caption -->
+  <div class="card-body py-2">
+    <p class="mb-1"><span class="fw-semibold">800 Likes</span></p>
+    <p class="card-text mb-0 small">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed hendrerit non risus non accumsan. Vivamus mollis est ut mauris faucibus maximus vitae vitae nunc. Vivamus sed lacus urna. Curabitur pretium condimentum euismod. Integer dignissim metus semper augue sagittis, vel placerat.</p>
+  </div>
+</div>
+
+  </div>
+</div>
+  <!--Aquí termina el contenido de las pestañas-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" 
+integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" 
+crossorigin="anonymous"></script>
+</body>
+</html>
